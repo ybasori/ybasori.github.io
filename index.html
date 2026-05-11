@@ -1,76 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculator Celcius - Fahrenheit</title>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Roboto"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
-    <script src="./js/script.js"></script>
-  </head>
-  <body>
-    <main class="main">
-      <section>
-        <p>
-          Masukan suhu derajat Celcius (<sup>o</sup>C) ke kotak dibawah, lalu
-          klik tombol Konversi untuk mendapatkan hasil konversi dalam bentuk
-          Fahrenheit (<sup>o</sup>F)
-        </p>
-      </section>
-      <!-- Form celcius fahrenheit - start -->
-      <section class="conversion-cf">
-        <section class="box">
-          <label>Celcius (<sup>o</sup>C):</label>
-          <input type="text" id="celcius-input" value="90" name="celcius" onkeyup="validate(this)" />
-        </section>
-        <section class="conversion-btns">
-          <button onclick="toCelcius()">Konversi</button>
-          <button onclick="toReset()">Reset</button>
-          <button onclick="toFahrenheit()">Reverse</button>
-        </section>
-        <section class="box">
-          <label>Fahrenheit (<sup>o</sup>F):</label>
-          <input type="text" id="fahrenheit-input" value="194" name="fahrenheit" onkeyup="validate(this)" />
-        </section>
-      </section>
-      <!-- Form celcius fahrenheit - end -->
-      <!-- cara kalkulasi - start -->
-      <section>
-        <p>Cara kalkulasi</p>
-        <p id="cara-kalkulasi">90<sup>o</sup>C * (9/5) + 32 = 194<sup>o</sup>F</p>
-        <a onclick="ubahKalkulasi()" id="kalkulasi-btn" data-kalkulasi="F" href="javascript:void(0)">Fahrenheit ke Celcius</a>
-      </section>
-      <!-- cara kalkulasi - end -->
-      <!-- info kalkulasi - start -->
-      <section>
-        <h3>
-          Cara konversi dari <span id="title-change">Celcius (<sup>o</sup>C) ke Fahrenheit
-          (<sup>o</sup>F)</span>
-        </h3>
-        <hr />
-        <p id="formula-text">
-          Suhu <span class="big-s">S</span> dalam derajat Fahrenheit
-          (<sup>o</sup>F) sama dengan suhu <span class="big-s">S</span> dalam
-          derajat Celcius (<sup>o</sup>C) kali 9/5 tambah 32.
-        </p>
-        <p id="formula-1">
-          <span class="normal-s">S</span><sub>(<sup>o</sup>F)</sub> = (<span
-            class="normal-s"
-            >S</span
-          ><sub>(<sup>o</sup>F)</sub> x 9/5) + 32
-        </p>
-        <p>atau</p>
-        <p id="formula-2">
-          <span class="normal-s">S</span><sub>(<sup>o</sup>F)</sub> = (<span
-            class="normal-s"
-            >S</span
-          ><sub>(<sup>o</sup>F)</sub> x 1.8) + 32
-        </p>
-      </section>
-      <!-- info kalkulasi - end -->
-    </main>
-  </body>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Yusuf Iranu Basori — Fullstack Developer</title>
+<meta name="description" content="Fullstack JavaScript developer with 6+ years building web apps with React, Node.js, and Express." />
+<meta property="og:title" content="Yusuf Iranu Basori — Fullstack Developer" />
+<meta property="og:description" content="Fullstack JavaScript developer with 6+ years building web apps with React, Node.js, and Express." />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo"><span>&lt;</span>yusuf<span> /&gt;</span></a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="experience.html">Experience</a>
+      <a href="skills.html">Skills</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a href="mailto:ybasori@gmail.com" class="btn btn-primary btn-sm">Hire me</a>
+  </div>
+  <nav class="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="experience.html">Experience</a>
+    <a href="skills.html">Skills</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+<main>
+
+<section class="hero">
+  <div class="container reveal">
+    <p class="mono">// hello, world</p>
+    <h1 style="margin-top:14px;">Yusuf Iranu<br/><span class="name-grad">Basori</span></h1>
+    <p class="lead">Fullstack JavaScript developer based in Bogor, Indonesia. I build performant web applications with <strong>React</strong>, <strong>Node.js</strong>, and <strong>Express</strong>.</p>
+    <div class="actions">
+      <a href="experience.html" class="btn btn-primary">View experience</a>
+      <a href="contact.html" class="btn btn-outline">Get in touch</a>
+    </div>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="container stats-grid">
+    <div class="stat reveal"><div class="num">6+</div><div class="label">Years building web</div></div>
+    <div class="stat reveal"><div class="num">7</div><div class="label">Companies shipped for</div></div>
+    <div class="stat reveal"><div class="num">15+</div><div class="label">Technologies in toolkit</div></div>
+    <div class="stat reveal"><div class="num">∞</div><div class="label">Bugs squashed</div></div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <p class="mono section-eyebrow">// what I do</p>
+    <h2 class="section-title">From database to pixel.</h2>
+    <div class="cards">
+      <div class="card reveal">
+        <h3>Frontend Engineering</h3>
+        <p>React, Next.js, Vue, Nuxt, React Native. Reusable component libraries and pixel-tight UIs.</p>
+      </div>
+      <div class="card reveal">
+        <h3>Backend &amp; APIs</h3>
+        <p>Node.js, Express, Koa, PHP/Laravel. RESTful services with MySQL, PostgreSQL, MongoDB.</p>
+      </div>
+      <div class="card reveal">
+        <h3>Team Collaboration</h3>
+        <p>Git workflows, design partnership, code reviews. Shipping features end-to-end with small teams.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="cta reveal">
+      <h2>Have a project in mind?</h2>
+      <p>I'm available for fullstack contract and full-time opportunities.</p>
+      <a href="contact.html" class="btn btn-primary">Let's talk →</a>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© <span id="year"></span> Yusuf Iranu Basori. Built with care.</p>
+    <div class="social">
+      <a href="https://linkedin.com/in/ybasori" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:ybasori@gmail.com">Email</a>
+    </div>
+  </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="script.js"></script>
+</body>
 </html>
