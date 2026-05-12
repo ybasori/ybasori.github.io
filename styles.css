@@ -103,6 +103,40 @@ section { padding: 80px 0; }
 .hero .lead strong { color: var(--text); font-weight: 500; }
 .hero .actions { margin-top: 36px; display: flex; gap: 12px; flex-wrap: wrap; }
 
+/* Hero with portrait */
+.hero-grid {
+  display: grid; grid-template-columns: 1.4fr 1fr; gap: 56px; align-items: center;
+}
+@media (max-width: 880px) { .hero-grid { grid-template-columns: 1fr; } }
+.portrait {
+  position: relative; justify-self: center;
+  width: min(360px, 80%); aspect-ratio: 1/1;
+  border-radius: 50%;
+  background: var(--gradient-primary);
+  padding: 4px;
+  box-shadow: var(--shadow-glow);
+}
+.portrait img {
+  width: 100%; height: 100%; object-fit: cover;
+  border-radius: 50%; border: 4px solid var(--bg);
+}
+.portrait::after {
+  content: ""; position: absolute; inset: -14px;
+  border: 1px dashed var(--border); border-radius: 50%; pointer-events: none;
+}
+
+/* WhatsApp floating button */
+.wa-float {
+  position: fixed; right: 20px; bottom: 20px; z-index: 60;
+  width: 56px; height: 56px; border-radius: 50%;
+  background: #25D366; color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 10px 30px -8px rgba(37,211,102,.6);
+  transition: transform .15s;
+}
+.wa-float:hover { transform: translateY(-2px); }
+.wa-float svg { width: 28px; height: 28px; fill: #fff; }
+
 .section-title { font-size: clamp(28px, 4vw, 44px); font-weight: 700; margin-bottom: 48px; }
 .section-eyebrow { margin-bottom: 12px; }
 
