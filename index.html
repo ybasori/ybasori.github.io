@@ -1,140 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Yusuf Iranu Basori — Fullstack Developer</title>
-<meta name="description" content="Yusuf Iranu Basori is a Fullstack JavaScript developer with 6+ years building web apps with React, Node.js, and Express." />
-<meta property="og:title" content="Yusuf Iranu Basori — Fullstack Developer" />
-<meta property="og:description" content="Yusuf Iranu Basori is a Fullstack JavaScript developer with 6+ years building web apps with React, Node.js, and Express." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://ybasori.github.io/" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Yusuf | Full Stack Web Developer" />
-<meta
-  name="twitter:description"
-  content="Portfolio of Yusuf — React, TypeScript, Node.js, and modern web development."
-/>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Yusuf Iranu Basori",
-  "url": "https://ybasori.github.io/",
-  "jobTitle": "Fullstack Web Developer",
-  "sameAs": [
-    "https://github.com/ybasori"
-  ],
-  "knowsAbout": [
-    "React",
-    "JavaScript",
-    "TypeScript",
-    "Node.js",
-    "Frontend Development",
-    "Backend Development"
-  ]
-}
-</script>
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Yusuf Iranu Basori, a fullstack JavaScript developer based in Bogor, Indonesia." />
+  <title>Yusuf Iranu Basori | Fullstack Developer</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="noise"></div>
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Go to home">
+        <span class="brand-mark">Y</span>
+        <span class="brand-text">Yusuf<span>.</span></span>
+      </a>
 
-<header class="site-header">
-  <div class="header-inner">
-    <a href="index.html" class="logo"><span>&lt;</span>yusuf<span> /&gt;</span></a>
-    <nav class="nav">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="experience.html">Experience</a>
-      <a href="skills.html">Skills</a>
-      <a href="contact.html">Contact</a>
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-links" data-nav-links>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <a class="btn btn-small" href="mailto:ybasori@gmail.com">Hire me</a>
+      </div>
     </nav>
-    <a href="mailto:ybasori@gmail.com" class="btn btn-primary btn-sm">Hire me</a>
-  </div>
-  <nav class="mobile-nav">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="experience.html">Experience</a>
-    <a href="skills.html">Skills</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
-<main>
+  </header>
 
-<section class="hero">
-  <div class="container hero-grid reveal">
-    <div>
-      <p class="mono">// hello, world</p>
-      <h1 style="margin-top:14px;">Yusuf Iranu<br/><span class="name-grad">Basori</span></h1>
-      <p class="lead">Fullstack JavaScript developer based in Bogor, Indonesia. I build performant web applications with <strong>React</strong>, <strong>Node.js</strong>, and <strong>Express</strong>.</p>
-      <div class="actions">
-        <a href="experience.html" class="btn btn-primary">View experience</a>
-        <a href="contact.html" class="btn btn-outline">Get in touch</a>
-      </div>
-    </div>
-    <div class="portrait">
-      <img src="photo.jpg" alt="Portrait of Yusuf Iranu Basori" />
-    </div>
-  </div>
-</section>
+  <main>
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Fullstack JavaScript Developer</p>
+          <h1>Building clean web products from database to pixel.</h1>
+          <p class="hero-lead">
+            Hi, I'm Yusuf Iranu Basori, a fullstack developer based in Bogor, Indonesia. I build performant web applications with React, Node.js, Express, and modern JavaScript ecosystems.
+          </p>
+          <div class="hero-actions">
+            <a class="btn" href="#experience">View Experience</a>
+            <a class="btn btn-ghost" href="#contact">Get in Touch</a>
+          </div>
+          <div class="stats" aria-label="Portfolio statistics">
+            <div><strong>6+</strong><span>Years building web</span></div>
+            <div><strong>7</strong><span>Companies shipped for</span></div>
+            <div><strong>15+</strong><span>Technologies</span></div>
+          </div>
+        </div>
 
-<section class="stats">
-  <div class="container stats-grid">
-    <div class="stat reveal"><div class="num">6+</div><div class="label">Years building web</div></div>
-    <div class="stat reveal"><div class="num">7</div><div class="label">Companies shipped for</div></div>
-    <div class="stat reveal"><div class="num">15+</div><div class="label">Technologies in toolkit</div></div>
-    <div class="stat reveal"><div class="num">∞</div><div class="label">Bugs squashed</div></div>
-  </div>
-</section>
+        <div class="hero-card reveal" aria-label="Developer profile card">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="profile-card">
+            <div class="avatar-wrap">
+              <div class="avatar">YB</div>
+              <div class="status-dot"></div>
+            </div>
+            <h2>Yusuf Iranu Basori</h2>
+            <p>React, Node.js, Express, API Integration, Component Architecture</p>
+            <div class="code-window">
+              <div class="window-dots"><span></span><span></span><span></span></div>
+              <pre><code>const developer = {
+  role: "Fullstack",
+  location: "Bogor, ID",
+  focus: "ship useful products"
+};</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<section>
-  <div class="container">
-    <p class="mono section-eyebrow">// what I do</p>
-    <h2 class="section-title">From database to pixel.</h2>
-    <div class="cards">
-      <div class="card reveal">
-        <h3>Frontend Engineering</h3>
-        <p>React, Next.js, Vue, Nuxt, React Native. Reusable component libraries and pixel-tight UIs.</p>
+    <section class="section services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">What I do</p>
+          <h2 id="services-title">End-to-end product engineering.</h2>
+          <p>From interface structure to backend APIs, I work across the stack to turn requirements into maintainable software.</p>
+        </div>
+        <div class="cards three">
+          <article class="card reveal">
+            <span class="card-icon">01</span>
+            <h3>Frontend Engineering</h3>
+            <p>React, Next.js, Vue, Nuxt, React Native, reusable component libraries, and responsive user interfaces.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card-icon">02</span>
+            <h3>Backend & APIs</h3>
+            <p>Node.js, Express, Koa, PHP/Laravel, REST services, and database-backed application logic.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card-icon">03</span>
+            <h3>Team Collaboration</h3>
+            <p>Git workflows, design partnership, API integration, code reviews, and feature delivery with small teams.</p>
+          </article>
+        </div>
       </div>
-      <div class="card reveal">
-        <h3>Backend &amp; APIs</h3>
-        <p>Node.js, Express, Koa, PHP/Laravel. RESTful services with MySQL, PostgreSQL, MongoDB.</p>
-      </div>
-      <div class="card reveal">
-        <h3>Team Collaboration</h3>
-        <p>Git workflows, design partnership, code reviews. Shipping features end-to-end with small teams.</p>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<section>
-  <div class="container">
-    <div class="cta reveal">
-      <h2>Have a project in mind?</h2>
-      <p>I'm available for fullstack contract and full-time opportunities.</p>
-      <a href="contact.html" class="btn btn-primary">Let's talk →</a>
+    <section class="section about" id="about">
+      <div class="container split">
+        <div class="section-head reveal">
+          <p class="eyebrow">About</p>
+          <h2>Engineer by training, builder by trade.</h2>
+          <p>
+            Yusuf started with Electrical Engineering at Universitas Trisakti, majoring in Computer Systems, then moved into web development in 2016. His work spans logistics, automation, and SaaS platforms with an emphasis on clean components, sensible APIs, and practical delivery.
+          </p>
+        </div>
+        <div class="info-stack reveal">
+          <div class="info-card highlight">
+            <span>Education</span>
+            <h3>Universitas Trisakti</h3>
+            <p>Bachelor of Electrical Engineering (S.T.)</p>
+            <small>Computer Systems | GPA 3.05 / 4.00 | Sep 2011 - Mar 2016</small>
+          </div>
+          <div class="info-card">
+            <span>Certifications</span>
+            <ul class="clean-list">
+              <li><strong>Dumbways Bootcamp</strong> - Fullstack JS, Oct 2019</li>
+              <li><strong>BangsaCerdas</strong> - Web Developer, Feb 2017</li>
+              <li><strong>DumetSchool</strong> - Webmaster, Nov 2016</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section experience" id="experience">
+      <div class="container">
+        <div class="section-head narrow reveal">
+          <p class="eyebrow">Experience</p>
+          <h2>A timeline of shipping useful software.</h2>
+          <p>Selected roles across frontend, fullstack, logistics, automation, and software platforms.</p>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-date">Jan 2025 - Present</div>
+            <div class="timeline-card">
+              <h3>Fullstack Developer</h3>
+              <p class="company">PT Sentra Solusi Automa | South Jakarta</p>
+              <ul>
+                <li>Built backend services with ExpressJS using MySQL and MongoDB.</li>
+                <li>Shipped user-facing features and reusable React components.</li>
+                <li>Integrated REST APIs and collaborated with the design team.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="timeline-date">Jul 2023 - Dec 2024</div>
+            <div class="timeline-card">
+              <h3>Frontend Developer</h3>
+              <p class="company">PT Sentra Solusi Automa | South Jakarta</p>
+              <ul>
+                <li>Developed React.js features and reusable component libraries.</li>
+                <li>Worked closely with designers to define product behavior.</li>
+                <li>Integrated REST APIs and handled bug fixes.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="timeline-date">Apr 2022 - Jun 2023</div>
+            <div class="timeline-card">
+              <h3>Frontend Developer</h3>
+              <p class="company">PT Datacakra Solusi Jaganata | South Jakarta</p>
+              <ul>
+                <li>Built user-facing React features and reusable components.</li>
+                <li>Collaborated cross-functionally with design and backend teams.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="timeline-date">Jul 2021 - Mar 2022</div>
+            <div class="timeline-card">
+              <h3>Frontend Developer</h3>
+              <p class="company">Shipper | South Jakarta</p>
+              <ul>
+                <li>Shipped React features for a logistics platform.</li>
+                <li>Built reusable libraries used across multiple products.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="timeline-date">Jul 2020 - Apr 2021</div>
+            <div class="timeline-card">
+              <h3>Developer</h3>
+              <p class="company">PT Immobi Solusi Prima | East Jakarta</p>
+              <ul>
+                <li>Worked across ReactJS, ExpressJS, and KoaJS.</li>
+                <li>Maintained PostgreSQL-backed services.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="timeline-date">Dec 2019 - Jun 2020</div>
+            <div class="timeline-card">
+              <h3>Frontend Developer</h3>
+              <p class="company">PT Enam Dua Teknologi | South Jakarta</p>
+              <ul>
+                <li>Built React features and integrated REST APIs.</li>
+                <li>Contributed to shared component libraries.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="timeline-date">Nov 2018 - Sep 2019</div>
+            <div class="timeline-card">
+              <h3>Web Developer (Fullstack)</h3>
+              <p class="company">PT Go Online Solusi | West Jakarta</p>
+              <ul>
+                <li>Developed client websites with PHP, CodeIgniter, and OpenCart.</li>
+                <li>Worked with MySQL and JavaScript / jQuery.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Skills</p>
+          <h2>The toolkit.</h2>
+          <p>Technologies used across frontend, backend, databases, and delivery workflows.</p>
+        </div>
+        <div class="skill-grid">
+          <article class="skill-card reveal">
+            <h3>Frontend</h3>
+            <div class="tags">
+              <span>JavaScript</span><span>TypeScript</span><span>ReactJS</span><span>React Native</span><span>NextJS</span><span>VueJS</span><span>NuxtJS</span><span>jQuery</span><span>HTML & CSS</span><span>Tailwind CSS</span><span>Bootstrap</span><span>Bulma</span>
+            </div>
+          </article>
+          <article class="skill-card reveal">
+            <h3>Backend</h3>
+            <div class="tags">
+              <span>NodeJS</span><span>ExpressJS</span><span>KoaJS</span><span>PHP</span><span>Laravel</span><span>CodeIgniter</span><span>REST APIs</span>
+            </div>
+          </article>
+          <article class="skill-card reveal">
+            <h3>Databases</h3>
+            <div class="tags">
+              <span>MySQL</span><span>PostgreSQL</span><span>MongoDB</span>
+            </div>
+          </article>
+          <article class="skill-card reveal">
+            <h3>Workflow</h3>
+            <div class="tags">
+              <span>Git</span><span>Component Design</span><span>API Integration</span><span>Code Review</span><span>Cross-team Collaboration</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container contact-grid">
+        <div class="section-head reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>Let's build something.</h2>
+          <p>Open to fullstack contract and full-time opportunities. The fastest way to reach Yusuf is by email.</p>
+        </div>
+        <div class="contact-panel reveal">
+          <a class="contact-row" href="mailto:ybasori@gmail.com">
+            <span>Email</span>
+            <strong>ybasori@gmail.com</strong>
+          </a>
+          <a class="contact-row" href="tel:+6287785291477">
+            <span>Phone</span>
+            <strong>+62 877 8529 1477</strong>
+          </a>
+          <a class="contact-row" href="https://wa.me/6287785291477" target="_blank" rel="noopener">
+            <span>WhatsApp</span>
+            <strong>Chat now</strong>
+          </a>
+          <a class="contact-row" href="https://linkedin.com/in/ybasori" target="_blank" rel="noopener">
+            <span>LinkedIn</span>
+            <strong>linkedin.com/in/ybasori</strong>
+          </a>
+          <div class="contact-row static">
+            <span>Location</span>
+            <strong>Bogor, Indonesia</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Yusuf Iranu Basori. Built with care.</p>
+      <a href="#top">Back to top</a>
     </div>
-  </div>
-</section>
-</main>
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <p>© <span id="year"></span> Yusuf Iranu Basori. Built with care.</p>
-    <div class="social">
-      <a href="https://linkedin.com/in/ybasori" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="https://wa.me/6287785291477" target="_blank" rel="noopener">WhatsApp</a>
-      <a href="mailto:ybasori@gmail.com">Email</a>
-    </div>
-  </div>
-</footer>
-<a href="https://wa.me/6287785291477" target="_blank" rel="noopener" class="wa-float" aria-label="Chat on WhatsApp">
-  <svg viewBox="0 0 24 24"><path d="M20.52 3.48A11.86 11.86 0 0 0 12.04 0C5.5 0 .2 5.3.2 11.84c0 2.09.55 4.13 1.6 5.93L0 24l6.4-1.68a11.82 11.82 0 0 0 5.64 1.44h.01c6.54 0 11.84-5.3 11.84-11.84 0-3.16-1.23-6.13-3.37-8.44ZM12.05 21.5h-.01a9.65 9.65 0 0 1-4.92-1.35l-.35-.21-3.8 1 1.02-3.7-.23-.38a9.66 9.66 0 0 1-1.48-5.13c0-5.34 4.35-9.69 9.7-9.69 2.59 0 5.02 1.01 6.85 2.85a9.62 9.62 0 0 1 2.84 6.85c0 5.34-4.35 9.69-9.69 9.69Zm5.31-7.26c-.29-.15-1.72-.85-1.99-.94-.27-.1-.46-.15-.66.15-.19.29-.75.94-.92 1.13-.17.19-.34.22-.63.07-.29-.15-1.23-.45-2.34-1.44-.86-.77-1.45-1.72-1.62-2.01-.17-.29-.02-.45.13-.6.13-.13.29-.34.43-.51.15-.17.19-.29.29-.48.1-.19.05-.36-.02-.51-.07-.15-.66-1.59-.9-2.18-.24-.57-.48-.49-.66-.5l-.56-.01c-.19 0-.51.07-.78.36-.27.29-1.02 1-1.02 2.43 0 1.43 1.04 2.81 1.19 3 .15.19 2.05 3.13 4.96 4.39.69.3 1.23.48 1.65.61.69.22 1.32.19 1.82.12.55-.08 1.72-.7 1.96-1.38.24-.68.24-1.26.17-1.38-.07-.12-.27-.19-.56-.34Z"/></svg>
-</a>
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script src="script.js"></script>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
